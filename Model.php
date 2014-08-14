@@ -19,4 +19,9 @@ class Model {
     {
         return ipGetOption('TrackDuck.projectId');
     }
+
+    public static function showInAdmin()
+    {
+        return ipGetOption('TrackDuck.showInAdmin');
+    }
 }
