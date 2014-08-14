@@ -1,0 +1,21 @@
+{
+    "title": "Track Duck",
+    "version": "1.00",
+    "name": "TrackDuck",
+    "description": "Track Duck.",
+    "author": "TrackDuck",
+    "options": [
+        {
+            "label": "Project ",
+            "name": "url",
+            "type": "text",
+            "default": "search"
+        },
+        {
+            "label": "Search URL (e.g. search)",
+            "name": "url",
+            "type": "text",
+            "default": "search"
+        }
+    ]
+}
