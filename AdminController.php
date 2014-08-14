@@ -17,7 +17,11 @@ class AdminController {
 
         if (Model::projectId()) {
             //project id exists
-            return ipView('view/status.php');
+            $data = array(
+                'projectId' => Model::projectId(),
+                'settingsUrl' => ipActionUrl(array('aa' => 'Plugins.index')) . '#/hash=&plugin=TrackDuck'
+            );
+            return ipView('view/status.php', $data);
         } else {
             //no project id
             ipAddJs('assets/trackDuckAdmin.js');

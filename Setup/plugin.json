@@ -2,8 +2,8 @@
     "title": "Track Duck",
     "version": "1.00",
     "name": "TrackDuck",
-    "description": "Track Duck.",
-    "author": "TrackDuck",
+    "description": "Take control of feedback and communication with clients.",
+    "author": "ImpressPages",
     "options": [
         {
             "label": "Project ID",
@@ -12,7 +12,7 @@
             "default": ""
         },
         {
-            "label": "Show TrackDuck while in admin",
+            "label": "Show TrackDuck in admin",
             "name": "showInAdmin",
             "type": "checkbox",
             "default": "0"
