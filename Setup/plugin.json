@@ -6,10 +6,10 @@
     "author": "TrackDuck",
     "options": [
         {
-            "label": "Project ",
-            "name": "url",
+            "label": "Project ID",
+            "name": "projectId",
             "type": "text",
-            "default": "search"
+            "default": ""
         },
         {
             "label": "Search URL (e.g. search)",

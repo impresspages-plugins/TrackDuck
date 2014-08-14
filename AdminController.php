@@ -14,8 +14,21 @@ namespace Plugin\TrackDuck;
 
 class AdminController {
     public function index() {
-        ipAddJs('assets/trackDuckAdmin.js');
 
-        return ipView('view/admin.php');
+        if (Model::projectId()) {
+            //project id exists
+            return ipView('view/status.php');
+        } else {
+            //no project id
+            ipAddJs('assets/trackDuckAdmin.js');
+            return ipView('view/admin.php');
+        }
+    }
+
+    public function storeProjectId()
+    {
+        ipRequest()->mustBePost();
+        ipSetOption('TrackDuck.projectId', ipRequest()->getPost('projectId'));
+        return new \Ip\Response\Json(array('status' => 'success'));
     }
 }
